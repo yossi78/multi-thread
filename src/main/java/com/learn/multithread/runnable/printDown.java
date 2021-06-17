@@ -6,14 +6,15 @@ public class printDown implements Runnable{
 
     @Override
     public void run() {
+        String threadName=Thread.currentThread().getName();
         for(int i=5;i>=1;i--){
-            System.out.println("Thread_Down - [" + i + "]");
+            System.out.println(threadName+" - [" + i + "]");
             try {
                 Thread.sleep(1000);
             } catch (InterruptedException e) {
             }
         }
-        System.out.println("Thread_Down finished");
+        System.out.println(threadName+" finished");
     }
 
 

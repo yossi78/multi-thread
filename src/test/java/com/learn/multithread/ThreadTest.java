@@ -13,8 +13,8 @@ public class ThreadTest {
     public static void runListOfThreadsTest() {
         printDown printDown =new printDown();
         printUp printUp =new printUp();
-        Thread treadDown = new Thread(printDown);
-        Thread treadUp = new Thread(printUp);
+        Thread treadDown = new Thread(printDown,"Thread_Down");
+        Thread treadUp = new Thread(printUp,"Thread_Up");
         runThreadList(treadDown,treadUp);
     }
 
@@ -32,8 +32,8 @@ public class ThreadTest {
     public static void multiTreadTest() {
         printDown printDown =new printDown();
         printUp printUp =new printUp();
-        Thread treadDown = new Thread(printDown);
-        Thread treadUp = new Thread(printUp);
+        Thread treadDown = new Thread(printDown,"Thread_Down");
+        Thread treadUp = new Thread(printUp,"Thread_Up");
         treadUp.start();
         treadDown.start();
     }
@@ -42,8 +42,8 @@ public class ThreadTest {
     public static void treadAfterTreadTest() throws InterruptedException {
         printDown printDown =new printDown();
         printUp printUp =new printUp();
-        Thread threadUp = new Thread(printUp);
-        Thread threadDown = new Thread(printDown);
+        Thread threadUp = new Thread(printUp,"Thread_Down");
+        Thread threadDown = new Thread(printDown,"Thread_Up");
         threadUp.start();
         threadUp.join(); // ALL THREADS WAIT TILL THREAD_UP  WILL FINISH HIS WORK
         threadDown.start();
@@ -51,8 +51,8 @@ public class ThreadTest {
 
 
     public static void main(String[] args) throws InterruptedException {
-        treadAfterTreadTest();
-        multiTreadTest();
+//        treadAfterTreadTest();
+//        multiTreadTest();
         runListOfThreadsTest();
 
     }
