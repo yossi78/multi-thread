@@ -1,6 +1,4 @@
 package com.learn.multithread;
-import com.learn.multithread.utils.Counter;
-
 
 
 public class SyncronizeTest {

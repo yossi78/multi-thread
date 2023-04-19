@@ -1,7 +1,4 @@
 package com.learn.multithread;
-import com.learn.multithread.runnable.printDown;
-import com.learn.multithread.runnable.printUp;
-import org.junit.Assert;
 import java.util.ArrayList;
 import java.util.List;
 
