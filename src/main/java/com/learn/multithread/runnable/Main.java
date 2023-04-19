@@ -6,7 +6,6 @@ public class Main{
 
     public static void main(String[] args) throws InterruptedException{
 
-
         // Create a subclass of Thread
         MyThread thread1 = new MyThread();
         //or
