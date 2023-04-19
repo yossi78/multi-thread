@@ -1,11 +1,12 @@
 package com.learn.multithread.runnable;
 
-public class MyRunnable implements Runnable{
+
+public class Thread2 extends Thread{
 
 
     @Override
     public void run() {
-        for(int i =0;i<10;i++) {
+        for(int i =1;i<=10;i++) {
             System.out.println("Thread #2 : "+i);
             try {
                 Thread.sleep(1000);
@@ -15,6 +16,7 @@ public class MyRunnable implements Runnable{
         }
         System.out.println("Thread #2 is finished :)");
     }
+
 
 
 }
