@@ -1,14 +1,14 @@
 package com.learn.multithread;
 
 import com.learn.multithread.runnable.MyRunnable;
-import com.learn.multithread.theads.Thread1;
+import com.learn.multithread.theads.MyThread;
 
 public class Main{
 
 
 
     public static void main(String[] args){
-       Thread1 thread1=new Thread1();
+       MyThread thread1 =new MyThread();
        MyRunnable myRunnable=new MyRunnable();
        Thread thread2=new Thread(myRunnable);
        thread1.start();

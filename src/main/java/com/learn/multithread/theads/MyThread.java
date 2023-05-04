@@ -1,7 +1,7 @@
 package com.learn.multithread.theads;
 
 
-public class Thread1 extends Thread{
+public class MyThread extends Thread{
 
 
     @Override
