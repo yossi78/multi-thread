@@ -1,4 +1,4 @@
-package com.learn.multithread.runnable;
+package com.learn.multithread.theads;
 
 
 public class Thread1 extends Thread{

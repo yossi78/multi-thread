@@ -1,7 +1,8 @@
 package com.learn.multithread.runnable;
 
 
-public class Thread2 extends Thread{
+
+public class MyRunnable implements Runnable{
 
 
     @Override
@@ -16,7 +17,5 @@ public class Thread2 extends Thread{
         }
         System.out.println("Thread #2 is finished :)");
     }
-
-
 
 }
